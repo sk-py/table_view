@@ -60,7 +60,9 @@ export default function Main() {
 
   // Invoking excel file download function
   const hanldeExcelDownload = () => {
-    exportFromJSON({ data, fileName, exportType });
+    const exportData = [...data]; // Create a copy of data to avoid mutating the original data
+    exportFromJSON({ data: exportData, fileName, exportType });
+    console.log("Pressed");
   };
 
   return (
@@ -72,7 +74,7 @@ export default function Main() {
         <div className="flex gap-4 items-center lg:mx-16 z-10 -mb-10 mr-5 ">
           <FontAwesomeIcon
             onClick={hanldeExcelDownload}
-            className="text-xl cursor-pointer"
+            className="text-xl cursor-pointer z-10"
             icon={faFileExcel}
             style={{ color: "#009900" }}
           />
