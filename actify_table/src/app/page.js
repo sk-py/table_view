@@ -65,43 +65,11 @@ export default function Main() {
 
   return (
     <div className="bg-white min-h-full rounded-md p-3 shadow-md">
-      <div className="flex flex-col gap-3 lg:flex-row lg:justify-between lg:items-center">
-        <div>
-          <h1 className="font-bold text-2xl">Account lists</h1>
-          <p>Here's a list of your accounts</p>
-        </div>
-        {/* Filter UI */}
-        {/* <div className="flex gap-2">
-          <p>Sort by : </p>
-          <div>
-            <select
-              value={type}
-              onChange={(e) => setType(e.target.value)}
-              name="type"
-              id="type"
-            >
-              <option value="account">Account</option>
-              <option value="email">Email</option>
-              <option value="phone">Phone no</option>
-              <option value="website">Website</option>
-              <option value="industry">Industry</option>
-            </select>
-            <select
-              value={order}
-              name="order"
-              id="order"
-              onChange={(e) => setOrder(e.target.value)}
-            >
-              <option value="asc">Ascending</option>
-              <option value="desc">Descending</option>
-            </select>
-          </div>
-        </div> */}
-        <p className="text-xs">
-          Sorted by {order} order ({type}){" "}
-        </p>
+      <div className="flex gap-3 flex-row justify-between items-center">
+        <div></div>
+
         {/* Excel download button and search bar */}
-        <div className="flex gap-4 items-center mx-16 z-10 -mb-40">
+        <div className="flex gap-4 items-center lg:mx-16 z-10 -mb-28  ">
           <FontAwesomeIcon
             onClick={hanldeExcelDownload}
             className="text-xl cursor-pointer"

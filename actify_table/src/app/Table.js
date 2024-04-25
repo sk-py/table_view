@@ -47,7 +47,7 @@ export default function Table({
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              placeholder="search by test name..."
+              placeholder="Search Here..."
               className="border px-1 rounded my-8"
             />
             <table className="sm:min-w-full">
