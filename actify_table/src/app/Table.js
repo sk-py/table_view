@@ -48,7 +48,7 @@ export default function Table({
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search Here..."
-              className="border px-1 rounded my-8"
+              className="border px-1 rounded mb-8 w-40 indent-3"
             />
             <table className="sm:min-w-full">
               {/* Table Header */}
@@ -59,7 +59,7 @@ export default function Table({
                       scope="col"
                       className="text-sm font-medium text-gray-900 px-6 py-4 text-left"
                     >
-                      <div className="flex justify-between items-center">
+                      <div className="flex justify-between items-center w-max gap-4">
                         <div>Date Time</div>
                         <div className="flex items-center gap-2">
                           <div>

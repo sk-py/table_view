@@ -64,12 +64,12 @@ export default function Main() {
   };
 
   return (
-    <div className="bg-white min-h-full rounded-md p-3 shadow-md">
+    <div className="bg-white min-h-full rounded-md  shadow-md">
       <div className="flex gap-3 flex-row justify-between items-center">
         <div></div>
 
         {/* Excel download button and search bar */}
-        <div className="flex gap-4 items-center lg:mx-16 z-10 -mb-28  ">
+        <div className="flex gap-4 items-center lg:mx-16 z-10 -mb-10 mr-5 ">
           <FontAwesomeIcon
             onClick={hanldeExcelDownload}
             className="text-xl cursor-pointer"
