@@ -237,7 +237,7 @@ export default function Table({
                         )}
                         {tableSchema.status && (
                           <td className="text-sm text-gray-900 px-6 py-4 whitespace-nowrap">
-                            {item.status ? "true" : "false"}
+                            {item.status}
                           </td>
                         )}
                         {tableSchema.action && (
